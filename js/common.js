@@ -142,6 +142,29 @@ $(this).closest('.s-form-docs-doc').remove();
 return false;
 
 });
+
+
+// Аккордион
+$('body').on('click', '.accordion .accordion_item .head', function (e) {
+	e.preventDefault()
+
+	const $item = $(this).closest('.accordion_item'),
+		$accordion = $(this).closest('.accordion')
+
+	if ($item.hasClass('active')) {
+		$item.removeClass('active').find('.data').slideUp(300)
+	} else {
+		$accordion.find('.accordion_item').removeClass('active')
+		$accordion.find('.data').slideUp(300)
+
+		$item.addClass('active').find('.data').slideDown(300)
+	}
+})
+
+
+
+
+
  $('.s-home-down a').click( function(){ // ловим клик по ссылке с классом go_to
   var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
         if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки

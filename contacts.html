@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="s-wrap">
+		<div class="p-about">
+			<div class="p-about-bg">
+				<picture>
+					<source srcset="img/pabout-bg-xs.jpg" media="(max-width: 480px)">
+					<source srcset="img/pabout-bg-md.jpg" media="(min-width: 480px) and (max-width: 1200px)">
+						<img src="img/contacts-bg.jpg" alt="img" class="img-responsive">
+					</picture>
+				</div>
+				<header class="s-header">
+					<div class="s-header-inner flex flexalcenter flexbetween">
+						<div class="s-header-logo">
+							<a href="/">Alfatek</a>
+						</div>
+						<ul class="s-header-menu flex">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Каталог продукции</a></li>
+							<li><a href="#">Раскрытие информации</a></li>
+							<li><a href="#">Публикации</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<div class="s-header-toggle">
+							<span class="icon-menu-burger">
+								<span class="icon-menu-burger-line"></span>
+							</span>
+						</div>
+					</div>
+				</header>
+				<div class="s-bg"></div>
+				<div class="s-menu">
+					<div class="s-menu-close"><img class="svg" src="img/icon-close.svg" alt="img"></div>
+
+					<div class="s-menu-inner"> 
+						<div class="s-header-logo">
+							<a href="/">Alfatek</a>
+						</div>
+						<ul class="s-header-menu">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Каталог продукции</a></li>
+							<li><a href="#">Раскрытие информации</a></li>
+							<li><a href="#">Публикации</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="p-about-cont">
+					<div class="wrap">
+						<h1 class="p-about-title">Контакты</h1>
+					</div>
+				</div>
+			</div>
+			<div class="s-breadcrumb">
+				<div class="wrap">
+					<ul class="s-breadcrumb-list flex">
+						<li><a href="/">Главная</a></li>
+						<li>Контакты</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="contact">
+			<div class="wrap">
+				<div class="contact_adress">
+					<div class="contact_adress-title">Наш адрес:</div>
+					<div class="contact_adress-text">115280, Москва, ул. Ленинская слобода, д. 19, комн. 93, этаж 6</div>
+				</div>
+				<div class="contact_phone">
+					<div class="contact_phone-title">Телефоны:</div>
+					<div class="contact_phone-text">+ 7 (499) 567-85-85 доб. 101 (коммерческие вопросы)<br>
+						+ 7 (499) 567-85-85 доб. 102 (бухгалтерия)<br>
+						+ 7 (499) 567-85-85 доб. 103  (договоры и юредические вопросы)
+					</div>
+				</div>
+				<div class="contact_email">
+					<div class="contact_email-title">E-mail:</div>
+					<div class="contact_email-text">sales@alfa-tek.ru (коммерческие вопросы)<br>
+						buh@alfa-tek.ru (бухгалтерия)<br>
+						docs@alfa-tek.ru (договоры и юредические вопросы)
+					</div>
+				</div>
+
+			</div>	
+		</div>
+		
+
+		<div class="s-form">
+			<div class="wrap">
+				<div class="s-form-title">Отправить сообщение</div>
+				<form action="main.php">
+					<div class="s-form-line flex s-form-line-main">
+						<div class="s-form-block block1">
+							<div class="s-form-line flex s-form-inputs">
+								<div class="s-form-block1">
+									<div class="s-form-item">
+										<input type="text" name="name" placeholder="Ваше имя">
+									</div>
+								</div>
+								<div class="s-form-block1">
+									<div class="s-form-item">
+										<input type="text" name="phone" placeholder="Ваш телефон">
+									</div>
+								</div>
+								<div class="s-form-block1">
+									<div class="s-form-item">
+										<input type="text" name="email" placeholder="* Ваш e-mail">
+									</div>
+								</div>
+								<div class="s-form-block1">
+									<div class="s-form-button">
+										<button type="submit" class="s-form-btn">Отправить</button>
+									</div>
+								</div>
+							</div>
+							<div class="s-form-docs flex flexalcenter">
+								<div class="s-form-docs-files flex flexalcenter"></div>
+								<div class="input-file-container">  
+									<input class="input-file" id="my-file4" type="file" name="file">
+									<label tabindex="0" for="my-file4" class="input-file-trigger"></label>
+								</div>
+								<div class="s-form-docs-add flex flexalcenter">
+									<span class="icon"><img src="img/icon-file.svg" alt="img"></span><span class="text">Прикрепите дополнительные файлы</span>
+								</div>
+							</div>
+						</div>
+						<div class="s-form-block block2">
+							<div class="s-form-line">
+								
+								<div class="s-form-block2">
+									<div class="s-form-info">
+										Нажимая на кнопку отправить вы соглашаетесь <br>на обработку персональных данных
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer class="s-footer">
+			<div class="s-footer-top">
+				<div class="s-footer-line flex flexbetween">
+					<div class="s-footer-block block1">
+						<div class="s-footer-comp">
+							<div class="s-footer-logo">
+								<a href="/">Alfatek</a>
+							</div>
+							<div class="s-footer-comp-info">
+								Оптовая продажа топлива, 
+								нефтепродуктов и СУГ
+							</div>
+							<ul class="s-footer-soc">
+								<li><a href="#">
+									<img src="img/icon-tel.svg" alt="img" class="svg">
+								</a></li>
+								<li><a href="#">
+									<img src="img/icon-inst.svg" alt="img" class="svg">
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="s-footer-block block2">
+						<ul class="s-footer-menu">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Каталог продкции</a></li>
+							<li><a href="#">Раскрытие информации</a></li>
+						</ul>
+					</div>
+					<div class="s-footer-block block3">
+						<ul class="s-footer-menu">
+							<li><a href="#">Публикации</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="s-footer-block block4">
+						<div class="s-footer-contacts">
+							<ul class="s-footer-contacts-list">
+								<li>
+									<span>Контактная информация</span>
+									<p><a href="tel:+74951234567">+7 (495) 123 45 67</a></p>
+								</li>
+								<li class="mail">
+									<span>Для предложений:</span>
+									<p><a href="mailto:Info@alfatek.ru">Info@alfatek.ru</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="s-footer-bottom flex flexbetween">
+				<div class="s-footer-politic">
+					<a href="#">Политика конфидециальности</a>
+				</div>
+				<div class="s-footer-copy">ООО «Альфатэк» | 115280, Москва, ул. Ленинская слобода, д. 19, комн. 93, этаж 6</div>
+				<div class="s-footer-message">
+					<a href="#">Отправить сообщение</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>		
