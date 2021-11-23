@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-medium.eot"); /* IE9 */
+    src: url("../fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/gilroy-medium.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/gilroy-medium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/gilroy-medium.svg#Gilroy Medium") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-regular.eot"); /* IE9 */
+    src: url("../fonts/gilroy-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/gilroy-regular.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/gilroy-regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/gilroy-regular.svg#Gilroy") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-semibold.eot"); /* IE9 */
+    src: url("../fonts/gilroy-semibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/gilroy-semibold.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/gilroy-semibold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/gilroy-semibold.svg#Gilroy SemiBold") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+

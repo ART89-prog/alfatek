@@ -1,0 +1,1653 @@
+body
+	margin: 0
+	padding: 0
+	-webkit-font-smoothing: antialiased
+
+*
+	box-sizing: border-box
+	outline: none
+
+input, button, input:active, button:active
+	outline: none
+input
+	-webkit-appearance: none;
+
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+.clear
+	clear: both
+
+a:focus
+	outline: none
+
+
+.hidden-item
+	display: none
+
+.visible-item
+	display: block
+
+
+h1, h2, h3
+	margin-top: 0
+	margin-bottom: 0
+
+p
+	margin-top: 0
+	margin-bottom: 0
+
+a
+	text-decoration: none
+.img-responsive
+	display: block
+	max-width: 100%
+.flex
+	display: -webkit-flex
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+	flex-wrap: wrap;
+.flexbetween
+	justify-content: space-between
+.flexcenter
+	justify-content: center
+.flexright
+	justify-content: flex-end
+.flexalcenter
+	align-items: center
+.flexalstretch
+	align-items: stretch
+.flexalccenter
+	align-content: center
+.flexnwr
+	flex-wrap: nowrap
+.inflex
+	display: inline-flex
+.wrap
+	max-width: 1526px
+	margin: 0 auto
+	padding: 0 15px
+.s-wrap
+	overflow: hidden
+
+.s-home
+	position: relative
+	min-height: 100vh
+	&-slider
+		position: relative
+		.owl-dots
+			position: absolute
+			opacity: 0
+			visibility: hidden
+		&-item
+			min-height: 100vh
+			background-repeat: no-repeat
+			background-position: center 0
+			background-size: cover
+			position: relative
+			img
+				height: 100%
+				width: 100%
+				display: block
+				-o-object-fit: cover;
+				object-fit: cover;
+		&-bg
+			position: absolute
+			left: 0
+			top: 0
+			display: block
+			width: 100%
+			height: 100%
+			&:after
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				display: block
+				width: 100%
+				height: 100%
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0.072) 0%, rgba(0, 0, 0, 0.015) 0.01%, rgba(1, 1, 1, 0.0279019) 0.02%, rgba(1, 1, 1, 0.0283322) 0.03%, rgba(30, 30, 30, 0.3) 100%);
+		&-cont
+			position: relative
+			z-index: 2
+			padding-top: 336px
+			padding-bottom: 92px
+		&-title
+			font-family: Inter;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 81px;
+			line-height: 110%;
+			color: #FFFFFF;
+			max-width: 830px
+		&-text
+			font-family: Inter;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 30px;
+			color: #FFFFFF;
+			padding-top: 30px;
+			max-width: 1066px;
+		&-nav
+			padding-top: 168px
+		&-arrow
+			width: 76px;
+			height: 76px;
+			border-radius: 50%
+			border: 1px solid #FFFFFF;
+			cursor: pointer
+			&.disabled
+				background-color: transparent
+				pointer-events: none
+				svg
+					path
+						fill: #fff
+			background: #FFFFFF;
+			transition: .3s all
+			svg
+				path
+					fill: #000
+					transition: .3s all
+			&:hover
+				background: #00ADF8;
+				border: 1px solid #00ADF8;
+				svg
+					path
+						fill: #fff
+			&:not(:last-child)
+				margin-right: 27px
+		&-count
+			margin-top: -66px
+		&-current		
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 81px;
+			line-height: 90px;
+			text-transform: capitalize;
+			color: #FFFFFF;
+			padding-top: 52px
+		&-total
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 90px;
+			text-transform: capitalize;
+			color: #FFFFFF;
+			span
+	&-down
+		width: 69px
+		margin: 0 auto
+		position: absolute
+		bottom: 0
+		z-index: 10
+		left: 466px;
+		right: 0
+		a
+			width: 100%
+			height: 126px;
+			background: #FFFFFF;
+			transition: .3s all
+			svg
+				path
+					fill: #000
+					transition: .3s all
+			&:hover
+				background: #00ADF8;
+				svg
+					path
+						fill: #fff
+
+
+
+.s-header
+	position: absolute
+	display: block
+	width: 100%
+	z-index: 10
+	padding-top: 38px
+	padding-bottom: 38px
+	&-toggle
+		display: none
+		cursor: pointer
+		position: relative
+		width: 40px;
+		height: 29px;
+		cursor: pointer;
+		-webkit-transition: all 200ms ease-out;
+		-moz-transition: all 200ms ease-out;
+		-o-transition: all 200ms ease-out;
+		transition: all 200ms ease-out;
+		margin-top: -15px
+		margin-right: 8px
+		z-index: 102
+		&.active
+			.icon-menu-burger
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				-webkit-transition: transform .2s linear .4s;
+				-moz-transition: transform .2s linear .4s;
+				-o-transition: transform .2s linear .4s;
+				-ms-transition: transform .2s linear .4s;
+				transition: transform .2s linear .4s;
+				-webkit-transition: -webkit-transform .2s linear .4s;
+				height: 2px
+				&:before
+					-webkit-transition: top .2s linear;
+					-moz-transition: top .2s linear;
+					-o-transition: top .2s linear;
+					-ms-transition: top .2s linear;
+					transition: top .2s linear;
+					top: 0;
+					opacity: 0
+				&:after
+					-webkit-transition: bottom .2s linear;
+					-moz-transition: bottom .2s linear;
+					-o-transition: bottom .2s linear;
+					-ms-transition: bottom .2s linear;
+					transition: bottom .2s linear;
+					bottom: 0;
+				&:before, &:after, .icon-menu-burger-line
+					background: #fff;
+				.icon-menu-burger-line
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					transform: rotate(90deg);
+		.icon-menu-burger
+			height: 2px;
+			width: 40px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -1px 0 0 -13px;
+			-webkit-transition: transform .2s ease 0;
+			-moz-transition: transform .2s ease 0;
+			-o-transition: transform .2s ease 0;
+			-ms-transition: transform .2s ease 0;
+			transition: transform .2s ease 0;
+			-webkit-transition: -webkit-transform .2s ease 0;
+			&:before
+				top: -8px;
+				-webkit-transition: top .2s linear .4s;
+				-moz-transition: top .2s linear .4s;
+				-o-transition: top .2s linear .4s;
+				-ms-transition: top .2s linear .4s;
+				transition: top .2s linear .4s;
+				display: none
+			&:after
+				bottom: -10px;
+				-webkit-transition: bottom .2s linear .4s;
+				-moz-transition: bottom .2s linear .4s;
+				-o-transition: bottom .2s linear .4s;
+				-ms-transition: bottom .2s linear .4s;
+				transition: bottom .2s linear .4s;
+			&:before, &:after
+				background: #fff;
+				border-radius: 1px;
+				content: '';
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				left: 0;
+			&-line
+				background: #fff;
+				border-radius: 1px;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				-webkit-transition: transform .2s linear .2s;
+				-moz-transition: transform .2s linear .2s;
+				-o-transition: transform .2s linear .2s;
+				-ms-transition: transform .2s linear .2s;
+				transition: transform .2s linear .2s;
+				-webkit-transition: -webkit-transform .2s linear .2s;
+	&-inner
+		padding: 0 70px
+	&-logo
+		a
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 21px;
+			line-height: 25px;
+			letter-spacing: 0.03em;
+			color: #FFFFFF;
+	&-menu
+		li
+			&:not(:last-child)
+				margin-right: 55px
+			a
+				font-family: Gilroy;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 13px;
+				line-height: 16px;
+				letter-spacing: 0.03em;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				position: relative
+				&:hover
+					&:after
+						transform: scale(1, 1);
+						transform-origin: left center;
+				&:after
+					content: ""
+					position: absolute
+					left: 0
+					bottom: -5px
+					display: block
+					background: #fff;
+					height: 1px
+					width: 100%
+					display: block
+					transform: scale(0, 1);
+					transform-origin: right center;
+					transition: transform 500ms ease;
+.s-bg
+	opacity: 0
+	visibility: hidden
+	transition: .3s all
+	background-color: rgba(0,0,0,0.2)
+	display: block
+	width: 100%
+	height: 100%
+	z-index: 1000
+	position: fixed
+	left: 0
+	top: 0
+	cursor: pointer
+	&.active
+		opacity: 1
+		visibility: visible
+.s-menu
+	position: fixed
+	left: 0
+	top: 0
+	display: block
+	width: 100%
+	height: 100%
+	z-index: 1001
+	overflow-y: auto
+	background: #FFFFFF;
+	box-shadow: 0px 16px 40px -12px rgba(17, 68, 96, 0.15);
+	padding: 18px 28px
+	left: -320px
+	max-width: 320px
+	transition: .3s all
+	&.active
+		left: 0
+	&-close
+		position: absolute
+		top: 20px
+		right: 20px
+		display: block
+		cursor: pointer
+		border-radius: 50%
+		opacity: 1
+		z-index: 10
+		&:hover
+			svg
+				g
+					opacity: 0.5
+		svg
+			g
+				opacity: 0.1
+				transition: .3s all
+	.s-header-menu
+		display: block
+		padding-top: 45px
+		li 
+			margin-right: 0
+			+ li
+				margin-top: 20px
+			a
+				color: #000
+	.s-header-logo
+		padding-top: 20px
+		a
+			color: #000
+
+
+
+.s-offers
+	padding-top: 180px
+	background: #FFFFFF;
+	padding-bottom: 100px
+	&-title
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+		color: #000000;
+	&-link
+		padding-top: 27px
+		&.hidden-desk
+			display: none
+		a
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 19px;
+			border-bottom: 1px solid
+			color: #000000;
+			transition: .3s all
+			&:hover
+				color: #00ADF8;
+	&-arrows
+		display: none
+	&-line
+		padding-top: 70px
+		margin: 0 -15px
+	&-block
+		width: 20%
+		padding: 0 15px
+	&-item
+		display: block
+		background: #F6F6F4;
+		width: 100%
+		padding: 30px 23px 30px 28px
+		transition: .3s all
+		&:hover
+			background: #019EE1;
+			.s-offers-item-price 
+				.sum
+					color: #F6F6F4
+				.text
+					color: rgba(255, 255, 255, 0.7);
+			.s-offers-item-line
+				background-color: #fff
+			.s-offers-item-name
+				color: #FFFFFF;
+			.s-offers-item-info
+				color: rgba(255, 255, 255, 0.7)
+		&-price
+			width: 100%
+			.sum
+				font-family: Gilroy;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 30px;
+				line-height: 36px;
+				color: #000000;
+				transition: .3s all
+			.text
+				font-family: Gilroy;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 13px;
+				line-height: 16px;
+				letter-spacing: 0.03em;
+				text-transform: uppercase;
+				color: #9C9C9C;
+				padding-top: 5px
+				transition: .3s all
+		&-line
+			height: 2px
+			width: 23px
+			display: block
+			background-color: #019EE1
+			margin-top: 25px
+			transition: .3s all
+		&-name
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 19px;
+			color: #000000;
+			padding-top: 37px
+			display: block
+			transition: .3s all
+		&-info
+			display: block
+			padding-top: 5px
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 16px;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: #9C9C9C;
+			transition: .3s all
+
+
+
+.s-about
+	padding-top: 77px
+	padding-bottom: 100px
+	&-img
+		height: 100%
+		img
+			height: 100%
+			-o-object-fit: cover;
+			object-fit: cover;
+	&-info
+		height: 100%
+		background: #F6F6F4;
+		padding: 121px 131px
+		padding-right: 30px
+		padding-bottom: 117px
+		&-inner
+			max-width: 589px
+	&-line
+		margin: 0 -30px
+	&-block
+		padding: 0 30px
+		&.block1
+			width: 41.5%
+		&.block2
+			width: 58.5%
+	
+	&-name
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #019EE1;
+	&-title
+		padding-top: 19px
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 120%;
+		color: #000000;
+		.tablet
+			display: none
+	&-text
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		color: #454545;
+		padding-top: 62px
+		.tablet
+			display: none
+	&-link
+		padding-top: 80px
+		padding-left: 5px
+		a
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+			color: #000000;
+			display: flex
+			&:hover
+				.icon
+					transform: translateX(10px)
+			.icon
+				transform: translateX(0px)
+				transition: .3s all
+				padding-left: 16px
+
+.s-news
+	padding-top: 80px
+	padding-bottom: 80px
+	.s-offers-link
+		padding-top: 22px
+
+	&-line
+		padding-top: 70px
+		margin: 0 -30px
+	&-block
+		padding: 0 30px
+		width: 25%
+	&-img
+		display: block
+		overflow: hidden
+		&:hover
+			img
+				transform: scale(1.12);
+		img
+			transition: all 0.3s;
+			width: 100%
+	&-date
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #9C9C9C;
+		padding-top: 20px
+	&-title
+		padding-top: 10px
+		a
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 26px;
+			color: #000000;
+			transition: .3s all
+			&:hover
+				color: #00ADF8;
+
+.s-form
+	padding-top: 100px
+	padding-bottom: 177px
+	&-title
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 48px;
+		color: #000000;
+	&-line
+		margin: 0 -30px
+		&-main
+			padding-top: 69px
+	&-block
+		padding: 0 30px
+		&.block1
+			width: 75%
+		&.block2
+			width: 25%
+	&-block1
+		padding: 0 30px
+		width: 33.3%
+	&-block2
+		padding: 0 30px
+		&:not(:last-child)
+			padding-bottom: 40px
+	&-item
+		input
+			height: 50px
+			border: 0
+			border-bottom: 1px solid #000000;
+			background-color: #fff
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 48px;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: #000000;
+			display: block
+			width: 100%	
+		input:-moz-placeholder 
+			opacity: 1
+			color: #9C9C9C
+		input::-moz-placeholder 
+			opacity: 1
+			color: #9C9C9C
+		input:-ms-input-placeholder 
+			opacity: 1
+			color: #9C9C9C
+		input::-webkit-input-placeholder 
+			opacity: 1
+			color: #9C9C9C
+	&-btn
+		height: 49px
+		display: block
+		width: 100%
+		background: #019EE1;
+		border: 0
+		padding: 0
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 49px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		transition: .3s all
+		cursor: pointer
+		&:hover
+			background: #00ADF8;
+	&-info
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 140%;
+		color: #000000;
+	&-docs
+		margin-top: 51px
+		position: relative
+		&-files
+		&-doc
+			position: relative
+			display: inline-block
+			margin-right: 25px
+			z-index: 5
+			.s-form-docs-img-close
+				top: -13px;
+				right: -12px;
+				position: absolute
+		&.active
+			.s-form-docs-add
+				.icon
+					display: none
+		&-add
+			margin-left: -10px
+			.text
+				font-family: Gilroy;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 140%;
+				border-bottom: 1px solid
+				color: #000000;
+				margin-left: 21px
+		.input-file-container
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			display: block
+			cursor: pointer
+			label
+				display: block
+				width: 100%
+				height: 100%
+				cursor: pointer
+		.input-file
+			position: absolute;
+			top: 0; 
+			left: 0;
+			width: 100%
+			height: 100%
+			display: block
+			opacity: 0;
+			cursor: pointer;
+
+.s-footer
+	background: #131313;
+	&-top
+		padding: 150px 70px 142px
+	&-block
+		width: 219px;
+		&.block4
+			width: 200px
+	&-logo
+		a
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 21px;
+			line-height: 25px;
+			letter-spacing: 0.03em;
+			color: #FFFFFF;
+	&-comp
+		&-info
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 19px;
+			letter-spacing: 0.03em;
+			color: #FFFFFF;
+			padding-top: 20px
+	&-soc
+		display: none
+	&-contacts
+		margin-top: -2px
+		&-list
+			li + li
+				margin-top: 31px
+			span
+				display: block
+				font-family: Gilroy;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 19px;
+				color: #9C9C9C;
+				padding-bottom: 8px
+			.mail
+				a
+					text-transform: none
+			a
+				font-family: Inter;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 19px;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				transition: .3s all
+				&:hover
+					color: #00ADF8;
+	&-menu
+		padding-top: 32px
+		li
+			+ li
+				margin-top: 11px
+			a
+				font-family: Inter;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 19px;
+				color: #FFFFFF;
+				transition: .3s all
+				&:hover
+					color: #00ADF8;
+	&-bottom
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		padding: 35px 69px
+	&-politic
+		a
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+			color: #FFFFFF;
+			transition: .3s all
+			&:hover
+				color: #00ADF8;
+	&-message
+		padding-right: 31px
+		a
+			font-family: Gilroy;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+			color: #FFFFFF;
+			transition: .3s all
+			&:hover
+				color: #00ADF8;
+	&-copy
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		color: #9C9C9C;
+		padding-right: 104px
+
+.p-about
+	position: relative
+	height: 600px;
+	&-bg
+		position: absolute
+		left: 0
+		top: 0
+		display: block
+		width: 100%
+		height: 100%
+		img
+			height: 100%
+			width: 100%
+			display: block
+			-o-object-fit: cover;
+			object-fit: cover;
+		&:after
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			display: block
+			width: 100%
+			height: 100%
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+	&-cont
+		position: relative
+		z-index: 2
+		padding-top: 304px
+	&-title
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 60px;
+		line-height: 70px;
+		color: #FFFFFF;
+.s-breadcrumb
+	padding-top: 90px
+	padding-bottom: 50px
+	&-list
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		color: #019EE1;
+		li
+			&:after
+				content: "/"
+				color: #000
+				padding-left: 1px
+				padding-right: 5px
+			&:last-child
+				&:after
+					display: none
+		a
+			color: #000
+.p-about-about
+	padding-top: 40px
+	padding-bottom: 90px
+	&-line
+		margin: 0 -50px
+	&-block
+		padding: 0 50px
+		&.block1
+			width: 36%
+		&.block2
+			width: 64%
+	&-title
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 120%;
+		color: #000000;
+		max-width: 800px
+		&.hide-desk
+			display: none
+	&-text
+		padding-top: 92px
+		margin: 0 -50px
+		&-block
+			width: 50%
+			padding: 0 50px
+	&-descr
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		color: #454545;
+		p + p
+			padding-top: 23px
+
+.p-about-principles
+	padding-top: 90px
+	padding-bottom: 90px
+	&-line
+		padding-top: 72px
+		margin: 0 -30px
+		.p-about-principles-line
+			padding-top: 0
+	&-block
+		padding: 0 30px
+		&.block1
+			width: 68%
+		&.block2
+			width: 32%
+		&.block3
+			width: 50%
+	&-item
+		position: relative
+		&.item2
+			padding-top: 60px
+		&.item4
+			height: 100%
+	&-text
+		position: absolute
+		left: 0
+		bottom: 0
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		color: #000000;
+		background: #FFFFFF;
+		height: 86px
+		line-height: 86px
+		padding: 0 30px
+	&-img
+		height: 100%
+		img
+			width: 100%
+		&.img4
+			img
+				height: 100%
+				-o-object-fit: cover;
+				object-fit: cover;
+
+.s-benefits
+	padding-top: 90px
+	padding-bottom: 40px
+	&-list
+		border-top: 1px solid #7A7A7A
+		margin-top: 68px;
+	&-line
+		border-bottom: 1px solid #7A7A7A;
+		&:last-child
+			border-bottom: 0
+	&-col
+		padding: 66px 15px
+		&.col1
+			width: 16.5%
+			padding-left: 0
+		&.col2
+			width: 43%
+		&.col3
+			width: 40.5%
+			padding-right: 0
+	&-num
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 42px;
+		text-transform: capitalize;
+		color: #019EE1;
+	&-text
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 27px;
+		color: #000000;
+		max-width: 380px
+	&-descr
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		color: #454545;
+
+
+@import responsive
+
+
+@include respond-to(desktop-wide)
+	.wrap
+		padding: 0 70px
+@include respond-to(desktop1)
+	.s-home-slider-cont
+		padding-top: 250px
+	.s-header-inner
+		padding: 0 30px
+	.wrap
+		padding: 0 30px
+	.s-header-menu li:not(:last-child)
+		margin-right: 35px
+	.s-about-info
+		padding: 120px 70px
+	.s-news-title a
+		font-size: 18px
+		line-height: 22px
+	.s-footer-top
+		padding: 120px 30px
+	.s-footer-bottom
+		padding: 35px 30px
+	.s-footer-message
+		padding-right: 0
+	.s-footer-copy
+		padding: 0 30px
+@include respond-to(desktop)
+	.s-home-slider-cont
+		padding-top: 346px
+	.s-home-slider-item
+		min-height: 940px
+	.s-header-menu
+		display: none
+	.s-home-slider-title
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 81px;
+		line-height: 110%;
+		text-transform: capitalize;
+		color: #FFFFFF;
+	.s-home-slider-text
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 29px;
+		color: #FFFFFF;
+		padding-top: 24px
+	.s-offers
+		padding-top: 120px
+		.s-offers-link
+			display: none
+	.s-header-toggle
+		display: block
+	.s-offers-line
+		margin: 0
+	.s-offers-block
+		padding: 0
+		width: 290px;
+	.s-offers .s-offers-link.hidden-desk
+		display: block
+		padding-top: 37px;
+		padding-left: 6px;
+	.s-offers
+		padding-bottom: 44px
+	.s-offers-arrows
+		display: flex
+		padding-top: 15px
+	.s-offers-arrow
+		cursor: pointer
+		&:not(:last-child)
+			margin-right: 28px
+	.s-about-block.block1
+		width: 47%
+		padding: 0
+	.s-about-block.block2
+		width: 53%
+		padding: 0
+	.s-about-line
+		margin: 0
+	.s-about-img
+		img
+			width: 100%
+	.s-about-info
+		padding: 71px 57px;
+	.s-about-title
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 120%;
+		color: #000000;
+		.desk
+			display: none
+		.tablet
+			display: block
+	.s-about-text
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		color: #454545;
+		.desk
+			display: none
+		.tablet
+			display: block
+	.s-about-link
+		padding-left: 0
+	.s-about
+		padding-bottom: 39px
+	.s-news .s-offers-link
+		display: none
+	.s-news-block
+		width: 50%
+		padding-bottom: 59px
+	.s-news-title a
+		font-size: 22px;
+		line-height: 26px;
+	.s-news-line
+		margin-bottom: -59px
+	.s-news
+		padding-bottom: 20px
+	.s-form-title
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+		color: #000000;
+		span
+			display: none
+	.s-form-block.block1
+		width: 100%
+	.s-form-docs
+		margin-top: 39px
+		width: 33.3%
+	.s-form-docs-add .text
+		width: calc(100% - 16px - 26px)
+		border-bottom: 0
+		text-decoration: underline
+		margin-left: 16px
+		padding-top: 3px
+	.s-form-docs-add
+		margin-left: 0
+		align-items: flex-start
+	.s-form-block.block2
+		width: 100%	
+		justify-content: flex-end
+		.s-form-line
+			display: flex
+			justify-content: flex-end
+			margin-top: -48px
+	.s-form-block2:not(:last-child)
+		padding-bottom: 0
+	.s-form-block2
+		padding: 0 30px
+		width: 33.3%
+		&:nth-child(1)
+			order: 2
+		&:nth-child(2)
+			order: 1
+	.s-form
+		padding-bottom: 123px
+	.s-footer-contacts
+		margin-top: -6px
+	.s-footer-block.block4
+		width: 211px
+	.s-footer-contacts-list a
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 26px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	.s-footer-contacts-list li + li
+		margin-top: 47px
+	.s-footer-menu
+		padding-top: 0
+	.s-footer-menu li a
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		color: #FFFFFF
+	.s-footer-comp-info
+		display: none
+	.s-footer-block
+		width: 195px
+		&:nth-child(2)
+			position: relative
+			left: -80px
+	.s-footer-soc
+		display: flex
+		padding-top: 36px
+		align-items: center
+		li:not(:last-child)
+			margin-right: 29px
+		li
+			a
+				&:hover
+					svg
+						path
+							fill: #019EE1
+		svg
+			path
+				fill: #fff
+				transition: .3s all
+	.s-footer-top
+		padding-bottom: 65px
+	.s-footer-politic
+		order: 1
+		margin-right: 30px
+	.s-footer-message
+		order: 2
+	.s-footer-copy
+		order: 3
+		width: 100%
+		padding: 0
+		padding-top: 26px
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		color: #9C9C9C
+	.s-footer-bottom
+		justify-content: flex-start
+	.p-about
+		height: 480px
+	.p-about-cont
+		padding-top: 204px
+	.s-breadcrumb
+		padding-top: 50px
+		padding-bottom: 25px
+	.p-about-about
+		padding-top: 25px
+		padding-bottom: 70px
+	.p-about-about-title
+		&.hide-desk
+			display: block
+	.p-about-about-title
+		display: none
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 120%;
+		color: #000000;
+		max-width: 705px
+		span
+			display: none
+	.p-about-about-line
+		padding-top: 90px
+		margin: 0 -15px
+	.p-about-about-block.block1
+		padding: 0 15px
+		width: 100%
+	.p-about-about-block.block2
+		width: 100%
+		padding: 0 15px
+	.p-about-about-text
+		padding-top: 75px
+		margin: 0 -30px
+	.p-about-about-text-block
+		padding: 0 30px
+	.p-about-principles
+		padding-top: 70px
+		padding-bottom: 59px
+	.p-about-principles-line
+		margin: 0 -15px
+	.p-about-principles-block
+		padding: 0 15px
+	.p-about-principles-block.block1
+		width: 67%
+	.p-about-principles-block.block2
+		width: 33%
+	.p-about-principles-item.item2
+		padding-top: 28px
+	.s-benefits
+		padding-top: 59px
+		padding-bottom: 18px
+	.s-benefits-list
+		margin-top: 104px
+		margin-bottom: -69px
+	.s-benefits-col.col1
+		width: 7%
+	.s-benefits-col.col2
+		width: 44.5%
+	.s-benefits-col.col3
+		width: 48.5%
+	.s-benefits-col
+		padding: 69px 15px;
+
+@include respond-to(tablet-large)
+	.s-header
+		padding: 25px 0
+	.s-header-inner
+		padding: 0 15px
+	.s-header-toggle .icon-menu-burger
+		width: 26px
+	.s-header-toggle
+		width: 26px
+		margin-right: 0
+	.s-home-slider-cont
+		padding-top: 138px
+	.wrap
+		padding: 0 15px
+	.s-home-slider-nav
+		padding-top: 81px
+	.s-home-slider-arrow
+		width: 42px;
+		height: 42px;
+		svg
+			width: 10px
+			height: 10px
+	.s-home-slider-arrow:not(:last-child)
+		margin-right: 10px
+	.s-home-slider-current
+		font-size: 40px;
+		line-height: 40px;
+		padding-top: 15px
+	.s-home-slider-total
+		font-size: 15px;
+		line-height: 15px;
+	.s-home-slider-count
+		margin-top: -13px
+	.s-home-slider-cont
+		padding-bottom: 175px
+		height: 100%
+	.s-home-slider-item
+		min-height: 598px
+		position: relative
+		height: 100%
+		display: -webkit-flex
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: flex-start;
+		align-items: stretch
+		align-content: stretch;
+		flex-wrap: wrap;
+	.s-home-slider-nav
+		position: absolute
+		bottom: 0
+		padding-bottom: 54px
+		left: 0
+		width: 100%
+	.s-home-down
+		display: none
+	.s-home-slider-title
+		font-size: 50px;
+		line-height: 110%;
+	.s-offers
+		padding-top: 44px
+	.s-offers-title
+		width: calc(100% + 10px)
+		font-size: 27px;
+		line-height: 32px;
+		margin-right: -10px
+	.s-offers-arrows
+		padding-top: 27px
+	.s-offers-line
+		padding-top: 19px
+	.s-offers .s-offers-link.hidden-desk
+		padding-top: 20px
+		padding-left: 0
+	.s-about-block.block1
+		display: none
+	.s-about-block.block2
+		width: 100%
+	.s-about-info
+		padding: 0
+		background-color: transparent
+	.s-about-title
+		font-size: 27px;
+		line-height: 32px;
+		padding-top: 0
+	.s-about-name
+		display: none
+	.s-about
+		padding-top: 26px
+	.s-about-text
+		padding-top: 35px
+	.s-about-link
+		padding-top: 36px
+	.s-news
+		padding-top: 31px
+		.s-offers-title
+			font-size: 32px;
+			line-height: 38px;
+	.s-news-line
+		padding-top: 29px
+	.s-news-title a
+		font-size: 19px;
+		line-height: 23px;
+	.s-form-title
+		font-size: 27px;
+		line-height: 32px;
+	.s-form
+		padding-top: 55px
+	.s-form-line-main
+		padding-top: 18px
+	.s-form-block1
+		width: 100%
+		+ .s-form-block1
+			padding-top: 12px
+	.s-form-docs
+		margin-top: 30px
+		width: 100%
+	.s-form-block.block2 .s-form-line
+		margin-top: 0
+		padding-top: 33px
+		display: block
+	.s-form-block2:nth-child(1)
+		order: 1
+	.s-form-block2
+		width: 100%
+		+ .s-form-block2
+			padding-top: 30px
+	.s-form-info
+		br
+			display: none
+	.s-form
+		padding-bottom: 70px
+	.s-footer-top
+		padding: 70px 15px 68px
+	.s-footer-block:nth-child(2)
+		left: 0
+	.s-footer-line
+		margin: 0 -15px
+	.s-footer-block.block1
+		width: 100%
+		padding-bottom: 69px
+	.s-footer-block
+		width: 50%
+		padding: 0 15px
+		padding-bottom: 72px
+	.s-footer-block.block4
+		width: 100%
+		padding-bottom: 0
+	.s-footer-bottom
+		padding: 34px 15px
+	.s-footer-politic
+		margin-bottom: 12px
+	.p-about
+		height: 293px
+	.p-about-cont
+		padding-top: 128px
+	.p-about-title
+		font-size: 33px;
+		line-height: 110%;
+	.s-breadcrumb
+		padding-top: 35px
+		padding-bottom: 18px
+	.s-breadcrumb-list
+		font-size: 16px;
+		line-height: 19px;
+	.p-about-about-title
+		font-size: 27px;
+		line-height: 32px;
+	.p-about-about
+		padding-top: 17px
+		padding-bottom: 35px
+	.p-about-about-line
+		padding-top: 35px
+	.p-about-about-text
+		padding-top: 34px
+		margin: 0 -15px
+	.p-about-about-text-block
+		padding: 0 15px
+		width: 100%
+		+ .p-about-about-text-block
+			padding-top: 23px
+	.p-about-principles
+		padding-top: 35px
+		padding-bottom: 35px
+	.p-about-principles-line
+		padding-top: 35px
+	.p-about-principles-text
+		font-size: 19px;
+		height: 57px
+		line-height: 57px
+		padding: 0 18px
+	.p-about-principles-item.item2
+		padding-top: 36px
+	.p-about-principles-block.block1
+		width: 100%
+	.p-about-principles-block.block2
+		width: 100%
+		padding-top: 34px
+	.s-benefits
+		padding-top: 35px
+		padding-bottom: 0
+	.s-benefits-list
+		margin-top: 32px
+		margin-bottom: 0
+		border-top: 1px solid #000000;
+	.s-benefits-num
+		font-size: 27px;
+		line-height: 32px;
+	.s-benefits-line
+		position: relative
+		padding-left: 53px
+		padding-bottom: 32px
+		border-bottom: 1px solid #000000;
+	.s-benefits-col.col1
+		width: auto
+		position: absolute
+		top: 10px
+		left: 0
+		padding: 0
+		padding-top: 24px
+	.s-benefits-col.col2
+		width: 100%
+		padding: 0
+	.s-benefits-text
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 23px;
+		color: #000000;
+		padding-top: 37px
+	.s-benefits-col.col3
+		width: 100%
+		padding: 0
+		padding-top: 36px
+	.s-benefits-descr
+		font-family: Gilroy;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		color: #454545;
+
+
+
+
+@include respond-to(tablet)
+	.s-home-slider-title
+		font-size: 40px;
+		line-height: 110%;
+	.s-home-slider-text
+		font-size: 15px;
+		line-height: 18px;
+		padding-top: 17px
+
+
+
+@include respond-to(mobile)
+	.s-news-block
+		width: 100%	
+	.s-news-block
+		padding-bottom: 46px
+		&:last-child
+			padding-bottom: 0
+	.s-news-line
+		margin-bottom: 0
+	.s-footer-block
+		width: 100%
+	
+	.p-about-principles-block.block3
+		width: 100%
+		+ .p-about-principles-block.block3
+			margin-top: 35px
+@include respond-to(mobile1)
+	
+	
+@include respond-to(mobile2)
+	
