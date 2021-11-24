@@ -209,8 +209,70 @@
     padding: 32px 57px 32px 30px;
     cursor: pointer;  
     background: #F6F6F4;
-    margin-bottom: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 38px;
+}
+.accordion .accordion_item .head .title {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;   
+}
+.accordion .accordion_item .data {
+    padding: 22px 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -60px;
+}
+.accordion .accordion_item .data .section {
+    margin-bottom: 70px;
+}
+.accordion .accordion_item .data > * {
+    width: calc(100%/2 - 60px);
+    margin-left: 60px;
+}
+.accordion .accordion_item .data .title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.accordion .accordion_item .data .text_block {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #454545;
+}
+.accordion .accordion_item .respond_btn {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 60px;
+    padding: 17px 25px;
+    transition: background .2s linear;
+    text-decoration: none;
+    border-radius: 3px;
+    background: #019EE1;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    border: none;
+    max-width: 330px;
+    width: 100%;    
+}
+.accordion .accordion_item.active .data {
+    display: flex !important;
 }
