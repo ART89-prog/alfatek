@@ -184,3 +184,33 @@
     display: block;
     padding: 50px 0 100px;
 }
+
+
+
+.accordion .accordion_item.active .head .icon > * {
+    display: none;
+}
+.accordion .accordion_item.active .head .icon > * + * {
+    display: block;
+}
+.accordion .accordion_item .head .icon > * + * {
+    display: none;
+}
+.vacancies_title {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 70px;
+}
+.accordion .accordion_item .head {
+    position: relative;
+    padding: 32px 57px 32px 30px;
+    cursor: pointer;  
+    background: #F6F6F4;
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
