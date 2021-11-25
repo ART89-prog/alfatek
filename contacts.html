@@ -117,67 +117,54 @@
 		</div>
 		
 
-		<div class="s-form contacts_form">
+		<div class="contacts_form">
 			<div class="wrap">
-				<div class="s-form-title">Отправить сообщение </div>
+				<div class="contacts_form-title">Отправить сообщение</div>
 				<form action="main.php">
-					<div class="s-form-line flex s-form-line-main">
-						<div class="s-form-block block1">
-							<div class="s-form-line flex s-form-inputs">
-								<div class="s-form-block1">
-									<div class="s-form-item">
-										<input type="text" name="name" placeholder="Ваше имя">
-									</div>
+					<div class="contacts_form-line-top">
+						<div class="contacts_form-field">
+							<input type="text" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="contacts_form-field">
+							<input type="text" name="phone" placeholder="Ваш телефон">
+						</div>
+						<div class="contacts_form-field">
+							<input type="text" name="email" placeholder="* Ваш e-mail">
+						</div>
+						<div class="contacts_form-field contacts_form-field-desctop">
+							<button type="submit" class="s-form-btn">Отправить</button>
+						</div>
+					</div>
+					<div class="contacts_form-line-bottom">
+						<div class="contacts_form-field contacts_form-field-textarea">
+							<textarea placeholder="Комментарий"></textarea>
+						</div>
+						<div class="contacts_form-field">
+							<div class="s-form-docs">
+								<div class="s-form-docs-files"></div>
+								<div class="input-file-container">  
+									<input class="input-file" id="my-file4" type="file" name="file">
+									<label tabindex="0" for="my-file4" class="input-file-trigger"></label>
 								</div>
-								<div class="s-form-block1">
-									<div class="s-form-item">
-										<input type="text" name="phone" placeholder="Ваш телефон">
-									</div>
+								<div class="s-form-docs-add">
+									<span class="icon"><img src="img/icon-file.svg" alt="img"></span><span class="text">Прикрепите дополнительные файлы</span>
 								</div>
-								<div class="s-form-block1">
-									<div class="s-form-item">
-										<input type="text" name="email" placeholder="* Ваш e-mail">
-									</div>
-								</div>
-							</div>
-
-							<div class="s-form-block3">
-								<div class="s-form-item">
-									<textarea placeholder="Комментарий"></textarea>
-								</div>
-								<div class="s-form-block1">
-									<div class="s-form-docs flex flexalcenter">
-										<div class="s-form-docs-files"></div>
-										<div class="input-file-container">  
-											<input class="input-file" id="my-file4" type="file" name="file">
-											<label tabindex="0" for="my-file4" class="input-file-trigger"></label>
-										</div>
-										<div class="s-form-docs-add flex flexalcenter">
-											<span class="icon"><img src="img/icon-file.svg" alt="img"></span><span class="text">Прикрепите дополнительные файлы</span>
-										</div>
-									</div>	
-								</div>
-								
 							</div>
 						</div>
-						<div class="s-form-block block2">
-							<div class="s-form-line">
-								<div class="s-form-block2">
-									<div class="s-form-button">
-										<button type="submit" class="s-form-btn">Отправить</button>
-									</div>
-								</div>
-								<div class="s-form-block2">
-									<div class="s-form-info">
-										Нажимая на кнопку отправить вы соглашаетесь <br>на обработку персональных данных
-									</div>
-								</div>
-							</div>
+						<div class="contacts_form-field">
+							<div class="contacts_form-politic contacts_form-field-politic-desctop">Нажимая на кнопку отправить вы соглашаетесь на обработку персональных данных</div>
+						</div>
+						<div class="contacts_form-field contacts_form-field-mob" style="display: none;">
+							<button type="submit" class="s-form-btn">Отправить</button>
+						</div>
+						<div class="contacts_form-field contacts_form-field-politic-mob" style="display: none;">
+							<div class="contacts_form-politic">Нажимая на кнопку отправить вы соглашаетесь на обработку персональных данных</div>
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
+		
 
 
 		<footer class="s-footer">

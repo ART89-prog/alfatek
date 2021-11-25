@@ -464,12 +464,14 @@
     }
 }
 
-
 /* VACANCIES END */
 
 
 /* CONTACTS START */
 
+.contacts_form {
+    padding-bottom: 157px;
+}
 .contact_items {
     display: flex;
     margin-left: -60px;
@@ -500,35 +502,158 @@
     line-height: 150%;
     color: #454545;
 }
-.contacts_form .s-form-block3 {
-    /* width: 66.7%;
-    padding-right: 30px; */
+
+.contacts_form-title {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 70px;
+}
+.contacts_form-line-top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-left: -60px;
+    margin-bottom: 40px;
 }
-.contacts_form .s-form-block3 textarea {
+.contacts_form-line-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts_form-line-top > * {
+    width: calc(100%/4 - 60px);
+    margin-left: 60px;
+}
+.contacts_form-field-textarea {
+    flex-basis: 48%;
+}
+.contacts_form-field-textarea textarea {
     width: 100%;
-}
-.s-form-item textarea {
-    /* height: 50px; */
-    border: 0;
+    height: 50px;
+    border: none;
     border-bottom: 1px solid #000000;
     background-color: #fff;
-    font-family: "Gilroy";
+    font-family: Gilroy;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    display: block;
+    resize: none;
+    overflow: hidden;
+}
+.contacts_form-line-top input {
+    height: 50px;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    background-color: #fff;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 48px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #000000;
     display: block;
     width: 100%;
-    resize: none;
-    overflow: auto;
 }
-.s-form-block3 .s-form-item {
-    width: 66.7%;
+.contacts_form-politic {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 140%;
+    color: #000000;
+}
+.contacts_form-line-bottom .contacts_form-field {
+    width: 22%;
+}
+.contacts_form-line-bottom .s-form-docs {
+    margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+    .contacts_form .s-form-docs {
+        width: 100%;
+    }    
+}
+@media (max-width: 991px) {
+    .contacts_form-field-mob {
+        display: block !important;
+    }
+    .contacts_form-field-desctop {
+        display: none;
+    }
+    .contacts_form-line-bottom {
+        flex-wrap: wrap;
+    }
+    .contacts_form-field-textarea {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    .contacts_form-line-top > * {
+        width: calc(100%/3 - 60px);
+    }
+    .contacts_form-line-bottom .contacts_form-field {
+        width: 29%;
+    }
+    .contact_items {
+        margin-left: 0px;
+        flex-wrap: wrap;
+    }
+    .contact_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 35px;
+    }
+    .contacts_form {
+        padding-top: 28px;
+        padding-bottom: 70px;
+    }
+    .contacts_form-title {
+        margin-bottom: 35px;
+    }    
+}
+@media (max-width: 767px) {
+    .contacts_form-line-top {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .contacts_form-line-top > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contacts_form-field-textarea textarea {
+        height: 65px;
+    }
+    .contacts_form-line-top {
+        margin-bottom: 0;
+    }
+    .contacts_form-line-bottom {
+        flex-direction: column;
+    }
+    .contacts_form-line-bottom .contacts_form-field {
+        width: 100%;
+    }
+    .contacts_form-field-politic-desctop {
+        display: none;
+    }
+    .contacts_form-field-politic-mob {
+        display: block !important;
+    }
+    .contacts_form-field-textarea {
+        margin-bottom: 33px;
+    }
+    .contacts_form .s-form-btn {
+        margin-top: 33px;
+        margin-bottom: 30px;
+    }
 }
 
 /* CONTACTS END */
