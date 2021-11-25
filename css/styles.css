@@ -121,6 +121,7 @@
     flex-direction: column;
     height: 352px;
     justify-content: space-between;
+    transition: all .4s;
 }
 .documentation_item-name {
     font-family: "Gilroy";
@@ -130,6 +131,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #9C9C9C;
+}
+.documentation_item:hover .documentation_item-title {
+    transform: scale(1.3);
 }
 .documentation_item-title {
     font-family: "Gilroy";
